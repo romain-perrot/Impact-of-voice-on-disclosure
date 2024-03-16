@@ -1,0 +1,158 @@
+version: "3.1"
+
+intents:
+#   - bot_challenge
+  - greet
+  - great_mood
+  - bad_mood
+  - nervous_mood
+  - deny_nervousness
+  - affirm_nervousness
+  - start
+  - job_discovery
+  - work_preference
+  - acknowledge
+  - provide_qualification_vs_experience
+  - provide_suggestions_for_freshers
+  - provide_easy_to_find_opportunity
+  - provide_challenging_decision_instance
+  - provide_technical_work_experience
+  - provide_technical_qualifications_weightage
+  - start_marketing_interview
+  - provide_job_interest
+  - provide_job_description_interest
+  - provide_answer_action_resolve_disparities
+  - provide_marketing_work_experience
+  - provide_marketing_qualifications_weightage
+  - start_finance_interview
+  - provide_strategy
+  - provide_problem_solving_approach
+  - provide_finance_work_experience
+  - provide_finance_qualifications_weightage
+  - start_healthcare_interview
+  - provide_work_life_balance_explanation
+  - provide_more_explanation
+  - provide_potential_approach
+  - provide_healthcare_work_experience
+  - provide_healthcare_qualifications_weightage
+
+
+entities:
+  - job_aspect
+
+
+responses:
+
+#   utter_iamabot:
+#   - text: "I am a bot, powered by Rasa."
+
+  utter_welcome:
+    - text: "Hello, how are you doing today?"
+
+  ######## choice ########
+  utter_great_and_nervousness:
+    - text: "Glad to hear that. So, are you nervous?"
+
+  utter_sad_and_nervousness:
+    - text: "Sorry to here, are you nervous about the interview?"
+
+  utter_nervous:
+    - text: "Don't worry, it is just a formality. Shall we begin?"
+  ########################
+
+  ######## choice ########
+  utter_confident_start:
+    - text: "Oh that's fantastic then lets begin, shall we?"
+
+  utter_nervous_start:
+    - text: "Don't be nervous, it is just a test. Shall we?" #what happen if the user say no?
+  ########################
+
+  utter_background_question_position:
+    - text: "How did you hear about this offer?"
+
+  utter_acknowledge_background_question_teamwork:
+    - text: "Do you prefer working on your own or with a team?"
+
+  utter_acknowledge_and_technical_job_requirement:
+    - text: "That’s great, as you are very well aware this job is for people who have technical background."
+
+  utter_ask_qualification_vs_experience:
+    - text: "In a work life culture, Qualification versus Experience, what do you think is more important to have?"
+
+  utter_ask_suggestions_for_freshers:
+    - text: "but say about freshers who has just being graduated? What are your suggestions for them inside of a company?"
+
+  utter_ask_easy_to_find_opportunity:
+    - text: "but do you think it's easy to find that kind of opportunity as a fresher? "  #### what if he answer no?
+
+  utter_acknowledge_and_ask_challenging_decision_instance:
+    - text: "Explain an instance where you were forced to make a challenging decision based on scant knowledge. What was the next step you took?"
+
+  utter_acknowledge_and_ask_technical_work_experience:
+    - text: "To know more azbout your technical background, can you describe a project you have done related to IT? "
+
+  utter_ask_technical_qualifications_weightage:
+    - text: "what are your qualifications and how do they add weightage to your work?"
+
+  utter_thanks_and_start_marketing_interview:
+    - text: "Thank you for your answers. The next interview, for the marketing position, will start when you say: I am ready to start the marketing interview"
+
+  utter_ask_job_interest:
+    - text: "Can you tell me why do you want this job in the first place?"
+
+  utter_ask_job_description_interest:
+    - text: "and what part of the job description caught your attention first?"
+
+  utter_ask_resolve_contradicting_information:
+    - text: "Let's say you are given contradicting information. In order to get reliable conclusions, how would you resolve the disparities to reach trustworthy conclusions?"
+
+  utter_acknowledge_and_ask_marketing_work_experience:
+    - text: "can you describe what have you worked as earlier in marketing?"
+
+  utter_ask_marketing_qualifications_weightage:
+    - text: "what are your qualifications and how do they add weightage to your work?"
+
+  utter_thanks_and_start_finance_interview:
+    - text: "Thank you for your answers. The next interview, for the finance position, will start when you say: I am ready to start the finance interview"
+
+  utter_ask_team_report:
+    - text: "Imagine a situation where you are asked to submit a report as a team and everybody has a different mindset about how the project should work, how would you get everyone on the same page?"
+
+  utter_ask_problem_solving_approach:
+    - text: "When solving a problem, how do you confirm that your assumptions or hypotheses are correct?"
+
+  utter_acknowledge_and_ask_finance_work_experience:
+    - text: "can you describe what have you worked as earlier in finance?"
+
+  utter_ask_finance_qualifications_weightage:
+    - text: "what are your qualifications and how do they add weightage to your work?"
+
+  utter_thanks_and_start_healthcare_interview:
+    - text: "Thank you for your answers. The last interview, for the healthcare position, will start when you say: I am ready to start the healthcare interview"
+
+  utter_ask_work_life_balance:
+    - text: "What exactly does work life balance mean to you?"
+
+  utter_ask_expectation_realism:
+    - text: "Aha, sounds really good but do you think it would be realistic to expect that?"
+
+  utter_inform_client_terrible_news:
+    - text: "Have you ever found yourself in a position to inform a client of terrible news? In what manner did you approach the discussion?"
+
+  utter_acknowledge_and_ask_healthcare_work_experience:
+    - text: "can you describe what have you worked as earlier in the healthcare department?"
+
+  utter_ask_healthcare_qualifications_weightage:
+    - text: "what are your qualifications and how do they add weightage to your work?"
+
+  utter_final:
+    - text: "This was the last interview, thank you for your cooperation!"
+
+# actions:
+#   - action_ask_background_question
+  # Add more custom actions based on your requirements
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

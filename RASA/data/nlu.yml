@@ -1,0 +1,526 @@
+version: "3.1"
+
+nlu:
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+- intent: greet
+  examples: |
+    - hey
+    - hey there
+    - hello
+    - hello there
+    - hi
+    - hi there
+    - greetings
+    - good day
+    - good morning
+    - good afternoon
+    - good evening
+
+- intent: great_mood
+  examples: |
+    - feeling fantastic
+    - great
+    - great day
+    - excited
+    - happy
+    - fantastic mood
+    - superb
+    - perfect
+    - amazing
+    - feeling like a king
+    - feeling like a queen
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: bad_mood
+  examples: |
+    - feeling down
+    - bad day
+    - terrible mood
+    - upset
+    - frustrated
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+
+- intent: nervous_mood
+  examples: |
+    - nervous
+    - anxious
+    - worried
+    - tense
+    - stressed
+    - unsettled
+
+- intent: deny_nervousness
+  examples: |
+    - no, not nervous
+    - i'm not anxious
+    - not feeling tense
+    - no stress
+    - i'm calm
+
+- intent: affirm_nervousness
+  examples: |
+    - yes, feeling nervous
+    - i'm anxious
+    - a bit stressed
+    - feeling tense
+    - nervous right now
+
+- intent: start
+  examples: |
+    - let's start
+    - let's begin
+    - starting now
+    - commencing
+    - getting started
+    - let's begin
+    - go ahead
+
+- intent: job_discovery
+  examples: |
+    - exploring job opportunities
+    - looking for a job
+    - job discovery
+    - considering new roles
+    - exploring career options
+    - job search
+    - Indeed
+    - Internet
+    - word to mouth
+    - Friend
+    - Project
+    - Course
+    - Mail
+    - Announce
+
+- intent: work_preference
+  examples: |
+    - preferred work environment
+    - work preferences
+    - ideal work conditions
+    - preferred working style
+    - work environment choice
+    - work style preference
+    - Alone
+    - Team
+    - Equip
+    - on my own
+    - working style
+
+- intent: acknowledge
+  examples: | 
+    - acknowledge
+    - recognition
+    - acknowledgement
+    - confirm
+    - confirming
+    - affirm 
+    - yes
+    - yeah
+    - of course
+    
+
+- intent: provide_qualification_vs_experience
+  examples: |
+    - qualification versus experience
+    - qualification or experience
+    - balance of qualification and experience
+    - importance of qualification and experience
+    - comparison of qualification and experience
+    - balancing qualification and experience
+    - experience
+    - qualification
+    - both
+
+- intent: provide_suggestions_for_freshers
+  examples: |
+    - advice for freshers
+    - suggestions for newcomers
+    - tips for entry-level professionals
+    - guidance for beginners
+    - recommendations for fresh graduates
+    - tips for starting a career
+    - recommend strategies for recent graduates
+    - offer guidance to entry-level employees
+    - propose tips for those just starting their careers
+    - provide advice for newcomers to the workforce
+    - share insights for fresh graduates entering the job market
+    - give suggestions for individuals starting their professional journey
+    - offer tips on navigating the early stages of a career
+    - provide recommendations for entry-level professionals
+    - share insights for beginners in the corporate world
+    - offer career advice for recent graduates
+
+- intent: provide_easy_to_find_opportunity
+  examples: |
+    - finding opportunities easily
+    - easy job opportunities
+    - simple job search
+    - opportunities within reach
+    - easily accessible opportunities
+    - simple job discovery
+    
+
+- intent: provide_challenging_decision_instance
+  examples: |
+    - challenging decision instance
+    - difficult decision-making scenario
+    - instance of a tough decision
+    - challenge in decision-making
+    - difficult choice scenario
+    - decision challenge
+    - hard choice 
+    - difficult choice 
+    - challenging situation
+    - tough scenario
+    - rough time
+    - little informations
+    - few knowledge
+    - not a lot of intel
+    - unaware of some elements
+
+- intent: provide_technical_work_experience
+  examples: |
+    - technical work experience
+    - experience in technical roles
+    - technical job background
+    - work history in technical field
+    - professional experience in technical roles
+    - technical expertise in work
+    - Software developement
+    - coding
+    - python
+    - javascript
+    - software engineer
+    - Testing
+
+- intent: provide_technical_qualifications_weightage
+  examples: |
+    - weightage of technical qualifications
+    - importance of technical qualifications
+    - value of technical education
+    - significance of technical skills
+    - contribution of technical qualifications
+    - impact of technical knowledge
+    - background knowledge
+    - increase productivity
+    - no need to learn
+    - esay to adapt
+
+- intent: start_marketing_interview
+  examples: |
+    - I am ready to start the marketing interview
+
+- intent: provide_job_interest
+  examples: |
+    - job interest
+    - interested in the job
+    - interest in the position
+    - excited about the role
+    - job role interest
+    - position sparks interest
+    - working in advertisement
+    - I'm interested in the creative aspects of marketing.
+    - My passion lies in digital marketing strategies.
+    - I have a keen interest in brand management.
+    - I'm excited about content creation and storytelling in marketing.
+    - I'm particularly interested in social media marketing.
+    - Marketing analytics and data-driven decisions really intrigue me.
+    - I have a strong interest in market research and consumer behavior.
+    - I'm enthusiastic about developing and implementing marketing campaigns.
+    - My interest lies in building and managing relationships with clients.
+    - I'm drawn to marketing because of its dynamic and ever-evolving nature.
+    - I find the intersection of technology and marketing fascinating.
+    - I'm interested in exploring innovative marketing techniques.
+
+- intent: provide_job_description_interest
+  examples: |
+    - interested in job description
+    - job description appeal
+    - intrigued by role details
+    - fascinated by job responsibilities
+    - engaged by job description
+    - excited about role specifics
+    - The emphasis on creative campaign development caught my attention.
+    - I'm particularly excited about the opportunity to lead marketing initiatives.
+    - The focus on data analytics and market research in the job description is appealing.
+    - The mention of social media strategy and community engagement stood out to me.
+    - I'm interested in the collaborative team environment described in the job description.
+    - The chance to work on innovative projects, as mentioned in the job description, is exciting.
+    - I'm drawn to the prospect of contributing to brand strategy and positioning.
+    - The emphasis on customer relationship management in the job description is what caught my eye.
+    - The job description's mention of cross-functional collaboration is something I value.
+    - The opportunity to drive marketing initiatives aligned with company goals is what interested me.
+    - close working area from my home
+
+
+- intent: provide_answer_action_resolve_disparities
+  examples: |
+    - answer on resolving disparities
+    - approach to resolving contradictions
+    - response to conflicting information
+    - solution for contradicting data
+    - strategy for handling discrepancies
+    - method for resolving disparities
+    - I would carefully evaluate each source's legitimacy and dependability.
+    - To resolve disparities, I'd verify the credibility of each information source.
+    - I'd analyze the context and potential biases of each piece of conflicting information.
+    - My approach would involve seeking additional information to validate or refute the contradictions.
+    - I would conduct thorough research and fact-checking to ensure accuracy.
+    - Consulting subject matter experts would be crucial in resolving conflicting information.
+    - I might consider the source's track record and reputation in making my decision.
+    - Comparing data points and cross-referencing information would be part of my strategy.
+    - I'd prioritize evidence-based conclusions and logical reasoning in resolving disparities.
+    - I'd assess the consistency and coherence of different perspectives to reach a reliable conclusion.
+
+- intent: provide_marketing_work_experience
+  examples: |
+    - marketing work experience
+    - professional history in marketing
+    - experience in marketing roles
+    - marketing job background
+    - career experience in marketing
+    - marketing expertise in work
+    - I have worked as a Digital Marketing Specialist for the past two years.
+    - My previous role involved managing social media campaigns for a fashion brand.
+    - I've been a Marketing Coordinator at XYZ Company, handling event promotions.
+    - In my last job, I focused on content creation and SEO strategies.
+    - I have experience as a Brand Manager, overseeing product launches and promotions.
+    - My background includes working as a Marketing Assistant for a tech startup.
+    - I've been involved in email marketing and lead generation in my previous role.
+    - I worked as a Marketing Analyst, analyzing market trends and consumer behavior.
+    - As a Marketing Executive, I specialized in developing and executing marketing plans.
+    - In my previous position, I contributed to successful influencer marketing campaigns.
+    - I have hands-on experience with marketing automation tools like HubSpot.
+    - My previous roles involved both traditional and digital marketing strategies.
+
+- intent: provide_marketing_qualifications_weightage
+  examples: |
+    - weightage of marketing qualifications
+    - importance of marketing qualifications
+    - value of marketing education
+    - significance of marketing skills
+    - contribution of marketing qualifications
+    - impact of marketing knowledge
+    - I hold a degree in Marketing with a focus on digital marketing strategies.
+    - My qualifications include a Bachelor's in Marketing and a certification in SEO.
+    - I have a Master's degree in Marketing, specializing in brand management.
+    - With a background in Marketing Analytics, my qualifications add a data-driven approach to my work.
+    - My qualifications in content marketing contribute to my ability to create engaging campaigns.
+    - I have hands-on experience with social media marketing, backed by relevant qualifications.
+    - My certifications in market research enhance my ability to understand consumer behavior.
+    - I completed a marketing internship, gaining practical experience in campaign execution.
+    - My coursework in technology and marketing equips me to explore innovative strategies.
+    - I am Google Analytics certified, bringing analytics expertise to my marketing efforts.
+    - I hold relevant certifications in email marketing and CRM systems.
+    - My qualifications in marketing strategy formulation strengthen my strategic approach to projects.
+
+- intent: start_finance_interview
+  examples: |
+    - I am ready to start the finance interview
+
+- intent: provide_strategy
+  examples: |
+    - provide alternative strategy
+    - suggest a different approach
+    - propose another strategy
+    - offer an alternative plan
+    - introduce a different tactic
+    - present an alternative solution
+    - I would initiate a collaborative discussion to understand each team member's perspective and concerns.
+    - My approach would involve facilitating open communication channels to encourage sharing of ideas and viewpoints.
+    - I'd organize a brainstorming session to explore different approaches and find common ground.
+    - I'd establish clear project objectives and expectations to ensure everyone understands the end goal.
+    - My strategy would involve breaking down the project into manageable tasks and assigning roles based on each team member's strengths.
+    - I'd encourage consensus-building through compromise and negotiation to reach agreement on the project's direction.
+    - I'd leverage team-building exercises to foster trust and cohesion among team members.
+    - I'd implement a structured decision-making process to evaluate and prioritize ideas effectively.
+    - I'd seek input from subject matter experts to provide valuable insights and guidance.
+    - My strategy would include regular check-ins and progress updates to ensure everyone stays aligned throughout the project.
+    - I'd emphasize the importance of collaboration and teamwork to achieve our collective goals.
+
+- intent: provide_problem_solving_approach
+  examples: |
+    - problem-solving approach
+    - approach to solving problems
+    - method for addressing issues
+    - strategy for resolving challenges
+    - problem resolution approach
+    - solving issues method
+    - I validate my assumptions through thorough financial analysis and data verification.
+    - My problem-solving approach involves stress-testing financial models to ensure robustness.
+    - I confirm hypotheses by conducting extensive market research and trend analysis.
+    - Utilizing historical financial data is a key aspect of verifying my assumptions.
+    - I rely on statistical analysis and regression models to validate financial hypotheses.
+    - My approach includes seeking input from subject matter experts to validate financial assumptions.
+    - Cross-referencing financial data from multiple sources is crucial in confirming my hypotheses.
+    - I use scenario analysis to confirm assumptions and assess potential outcomes.
+    - Regularly reviewing and updating financial models helps in validating ongoing assumptions.
+    - I conduct sensitivity analysis to gauge the impact of changes on financial assumptions.
+    - External validation through industry benchmarks is an integral part of my problem-solving process.
+    - My problem-solving approach includes collaborating with colleagues to gain diverse perspectives.
+
+- intent: provide_finance_work_experience
+  examples: |
+    - I have worked as a financial analyst, analyzing market trends and preparing reports.
+    - My previous roles include positions as a finance manager, overseeing budgeting and financial planning.
+    - I worked as an investment banker, specializing in mergers and acquisitions.
+    - My experience includes working as a tax consultant, advising clients on tax planning strategies.
+    - I have a background in risk management, having worked as a risk analyst in the finance sector.
+    - In my previous role, I served as a financial consultant, assisting clients with investment decisions.
+    - I held a position as a corporate treasurer, managing cash flow and financial investments.
+    - My work experience encompasses roles in financial operations, ensuring efficient financial processes.
+    - I have hands-on experience in financial modeling, gained from my role as a financial consultant.
+    - I worked as an auditor, conducting financial audits and ensuring regulatory compliance.
+    - My finance career includes positions in corporate finance, focusing on capital budgeting and fundraising.
+    - I served as a financial planner, helping clients with retirement planning and wealth management.
+
+- intent: provide_finance_qualifications_weightage
+  examples: |
+    - I have a Master's in Finance, specializing in financial analysis and risk management.
+    - My qualifications include a Bachelor's degree in Accounting and a CPA certification.
+    - With a background in investment banking, my qualifications contribute to deal analysis.
+    - I am a certified CFA charterholder, bringing advanced financial analysis skills to my work.
+    - My qualifications in financial modeling enhance my ability to make data-driven decisions.
+    - I hold an MBA with a concentration in Finance, providing a strategic perspective to my work.
+    - My experience in corporate finance, backed by qualifications, adds value to budgeting and planning.
+    - I am skilled in financial reporting and hold relevant certifications in this area.
+    - My qualifications include expertise in tax planning and compliance.
+    - I completed internships in finance, gaining practical experience in financial management.
+    - I am proficient in using financial software and analytics tools to drive insights.
+    - I have hands-on experience with risk assessment and mitigation strategies.
+
+- intent: start_healthcare_interview
+  examples: |
+    - I am ready to start the healthcare interview
+
+- intent: provide_work_life_balance_explanation
+  examples: |
+    - explanation of work-life balance
+    - define work-life balance
+    - understanding work-life balance
+    - work-life balance description
+    - explanation of balancing work and life
+    - work-life harmony explanation
+    - time for myself
+    - separation perso and pro
+    - line between life and work
+    - can do more close to deadline
+    - sticking to working hours
+    - overtime hours
+
+- intent: provide_more_explanation
+  examples: |
+    - provide additional explanation
+    - explain further
+    - give more details
+    - elaborate on the explanation
+    - offer additional information
+    - provide extra context
+    - This is realistic
+    - This is how i intend to work
+    - I am productive enough to make it happen
+    - I think so
+    - life is not just work
+    - question of organisation
+
+- intent: provide_potential_approach
+  examples: |
+    - provide potential approach
+    - suggest possible approach
+    - propose a potential solution
+    - offer a potential strategy
+    - present a possible approach
+    - introduce a potential plan
+    - terrible news
+    - inform client
+    - the approach I had
+    - I informed the client
+    - diplomatic
+    - In a thoughtful way
+    - the more gentle possible
+    - kindness
+    - compassion
+    - sympathy
+    - empathy
+    - through dialogue
+    - understanding
+    - nice way
+
+- intent: provide_healthcare_work_experience
+  examples: |
+    - lifeguard
+    - rescuer
+    - life saver
+    - ambulance driver
+    - paramedic
+    - pharmacist
+    - doctor
+    - surgeon
+    - nurse
+    - reanimation
+    - cardiolog
+    - chiropractor
+    - heatlh diploma
+    - dentist
+    - first aid
+    - podolog
+    - gastrolog
+    - ophtalmologist
+    - GP
+    - ENT
+    - therapist
+    - pediatrist
+    - dermatologist
+    - psychiatrist
+    - kinesitherapist
+    - physiotherapist
+    - proctologist
+    - gynaecologist
+    - anesthetist
+    - speech therapist
+    - orthoptist
+
+- intent: provide_healthcare_qualifications_weightage
+  examples: |
+    - health degree
+    - health diploma
+    - formation in health 
+    - training in care
+    - nurse parcours
+    - healthcare background
+    - medical training
+    - medical courses
+    - health courses
+    - health university
+    - healthcare school
+    - GP trained
+    - I used to follow class
+    - I have some training in this domain
