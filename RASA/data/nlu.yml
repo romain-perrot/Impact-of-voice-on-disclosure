@@ -407,8 +407,16 @@ nlu:
 
 - intent: provide_suggestions_for_freshers
   examples: |
-    - advice for freshers
-    - suggestions for newcomers
+    - build your network
+    - develop technical and soft skills
+    - seek mentors
+    - learn continuously
+    - be open to feedback
+    - adapt to workplace culture
+    - set clear goals
+    - work on your personal brand
+    - take initiatives
+    - balance work and life
     - tips for entry-level professionals
     - guidance for beginners
     - recommendations for fresh graduates
@@ -423,26 +431,26 @@ nlu:
     - provide recommendations for entry-level professionals
     - share insights for beginners in the corporate world
     - offer career advice for recent graduates
-    - suggest networking strategies for beginners
-    - recommend learning resources for new professionals
-    - advise on building a professional online presence
-    - suggest ways to develop relevant skills
-    - recommend methods for effective job searching
-    - offer guidance on resume and cover letter writing
-    - propose strategies for acing job interviews
-    - provide tips on managing work-life balance
-    - share insights on workplace etiquette for newcomers
-    - give advice on seeking mentorship opportunities
-    - offer suggestions for setting career goals
-    - recommend ways to handle workplace challenges
-    - advise on the importance of continuous learning
-    - suggest techniques for effective communication
-    - provide guidance on financial planning for newcomers
-    - recommend strategies for personal branding
-    - offer tips for building professional relationships
-    - advise on embracing feedback and criticism
-    - suggest ways to contribute to team success
-    - recommend approaches for staying motivated
+    - mentoring benefits for newcomers
+    - building a professional network early
+    - mastering soft skills for workplace success
+    - understanding workplace culture
+    - importance of continuous learning
+    - setting realistic career goals
+    - seeking feedback regularly
+    - embracing flexibility and adaptability
+    - importance of time management
+    - developing a strong work ethic
+    - learning from mistakes
+    - exploring various career paths
+    - importance of perseverance
+    - balancing work and life
+    - enhancing communication skills
+    - importance of teamwork
+    - focusing on personal development
+    - the value of internships
+    - crafting a standout resume
+    - preparing for job interviews
 
 
 - intent: provide_easy_to_find_opportunity
