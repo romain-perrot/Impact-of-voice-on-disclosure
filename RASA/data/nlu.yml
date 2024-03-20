@@ -2,13 +2,6 @@ version: "3.1"
 
 nlu:
 
-# - intent: bot_challenge
-#   examples: |
-#     - are you a bot?
-#     - are you a human?
-#     - am I talking to a bot?
-#     - am I talking to a human?
-
 - intent: greet
   examples: |
     - hey
@@ -22,10 +15,8 @@ nlu:
     - good morning
     - good afternoon
     - good evening
-    - welcome
-    - greetings
     - good to see you
-    - 
+
 
 - intent: great_mood
   examples: |
@@ -44,7 +35,6 @@ nlu:
     - I am feeling very good
     - I am great
     - I am amazing
-    - I am going to save the world
     - super stoked
     - extremely good
     - so so perfect
@@ -52,11 +42,8 @@ nlu:
     - so perfect
     - thrilled
     - on top of the world
-    - in high spirits
     - overjoyed
     - blissful
-    - in seventh heaven
-    - on cloud nine
     - elated
     - jubilant
     - euphoric
@@ -70,6 +57,7 @@ nlu:
     - ecstatic
     - in a joyful mood
     - full of happiness
+
 
 - intent: bad_mood
   examples: |
@@ -112,6 +100,7 @@ nlu:
     - bummed out
     - downhearted
 
+
 - intent: nervous_mood
   examples: |
     - nervous
@@ -133,33 +122,21 @@ nlu:
     - fretful
     - disquieted
     - perturbed
-    - distracted
     - overwhelmed
     - panicky
-    - insecure
     - pressured
     - daunted
     - intimidated
     - feeling twitchy
     - under a lot of stress
     - feeling the pressure
-    - scared
-    - feeling scared
     - alarmed
     - in a panic
-    - terror-stricken
-    - horrified
-    - spooked
-    - fearful
-    - dread
-    - in dread
-    - petrified
-    - feeling petrified
     - angst-ridden
     - biting nails
     - heart racing
     - palms sweating
-    - scared stiff
+
 
 - intent: deny_nervousness
   examples: |
@@ -179,7 +156,7 @@ nlu:
     - not a nerve in sight
     - serenity now
     - i'm unbothered
-    - i'm as calm as can be
+    - i'm as calm as I can be
     - nothing's rattling me
     - confidence is high
     - i'm all good, really
@@ -189,6 +166,8 @@ nlu:
     - i'm in a good place
     - not intimidated at all
     - i'm feeling very secure
+    - ready
+
 
 - intent: affirm_nervousness
   examples: |
@@ -225,35 +204,10 @@ nlu:
     - feeling on edge, indeed
     - i'm definitely not at ease
 
-- intent: start
+- intent: start_technical_interview
   examples: |
-    - let's start
-    - let's begin
-    - starting now
-    - commencing
-    - getting started
-    - let's begin
-    - go ahead
-    - ready to go
-    - time to get going
-    - begin
-    - embark
-    - launch
-    - proceed
-    - let's dive in
-    - let's kick things off
-    - let's set things in motion
-    - time to start
-    - let's get moving
-    - rolling out
-    - setting off
-    - let's jump in
-    - beginning now
-    - let's activate
-    - ready to begin
-    - getting underway
-    - start the process
-    - let's proceed
+    - I am ready to start the technical interview
+
 
 - intent: job_discovery
   examples: |
@@ -264,6 +218,11 @@ nlu:
     - exploring career options
     - job search
     - Indeed
+    - LinkedIn
+    - through LinkedIn
+    - job offer
+    - company website
+    - website
     - Internet
     - word to mouth
     - Friend
@@ -302,18 +261,21 @@ nlu:
     - considering consultancy roles
     - researching companies of interest
 
+
 - intent: work_preference
   examples: |
     - preferred work environment
     - work preferences
     - ideal work conditions
     - preferred working style
-    - work environment choice
+    - work environment
     - work style preference
     - Alone
     - Team
     - Equip
     - on my own
+    - working with a team
+    - working alone
     - working style
     - flexible hours
     - remote work
@@ -345,6 +307,10 @@ nlu:
     - community impact
     - sustainability initiatives
     - entrepreneurial environment
+    - work independently
+    - have a team
+    - feedback from a tram
+
 
 - intent: acknowledge
   examples: | 
@@ -374,7 +340,7 @@ nlu:
     - that's correct
     - exactly
     - you're right
-    - without question           
+    - without question   
     
 
 - intent: provide_qualification_vs_experience
@@ -388,6 +354,7 @@ nlu:
     - experience
     - qualification
     - both
+    - both qualification and experience
     - weighing qualifications against real-world experience
     - the value of hands-on experience versus academic credentials
     - evaluating the impact of formal education against practical skills
@@ -403,10 +370,13 @@ nlu:
     - the role of qualifications in providing theoretical knowledge versus the application of experience
     - how professional experience can sometimes outweigh academic qualifications
     - the importance of continuous learning, both through acquiring qualifications and gaining experience
-
+    
 
 - intent: provide_suggestions_for_freshers
   examples: |
+    - advice for freshers
+    - gaining experience
+    - suggestions for newcomers
     - build your network
     - develop technical and soft skills
     - seek mentors
@@ -501,8 +471,21 @@ nlu:
     - navigating a tricky situation
     - tough call with sparse details
 
+
 - intent: provide_technical_work_experience
   examples: |
+    - technical work experience
+    - experience in technical roles
+    - technical job background
+    - work history in technical field
+    - professional experience in technical roles
+    - technical expertise in work
+    - Software developement
+    - coding
+    - python
+    - javascript
+    - software engineer
+    - Testing
     - network engineering
     - system analysis
     - IT support
@@ -663,6 +646,7 @@ nlu:
     - litigation support software
     - intellectual property management
 
+
 - intent: provide_technical_qualifications_weightage
   examples: |
     - weightage of technical qualifications
@@ -674,11 +658,13 @@ nlu:
     - background knowledge
     - increase productivity
     - no need to learn
-    - esay to adapt
+    - easy to adapt
+
 
 - intent: start_marketing_interview
   examples: |
     - I am ready to start the marketing interview
+
 
 - intent: provide_job_interest
   examples: |
@@ -737,6 +723,7 @@ nlu:
     - committed to researching next-generation network infrastructures
     - fascinated by wearable technology and its health applications
 
+
 - intent: provide_job_description_interest
   examples: |
     - interested in job description
@@ -778,7 +765,6 @@ nlu:
     - the detailed responsibilities around data privacy and compliance caught my attention
 
 
-
 - intent: provide_answer_action_resolve_disparities
   examples: |
     - answer on resolving disparities
@@ -817,6 +803,7 @@ nlu:
     - integrating feedback loops for continuous improvement and error correction
     - drawing on historical data and case studies to inform decision-making
     - creating a shared database of verified information to reduce discrepancies
+
 
 - intent: provide_marketing_work_experience
   examples: |
@@ -901,9 +888,11 @@ nlu:
     - specialized training in B2B marketing strategies, addressing unique challenges in business-to-business contexts
     - earned credentials in ethical marketing, emphasizing responsible and inclusive marketing practices
 
+
 - intent: start_finance_interview
   examples: |
     - I am ready to start the finance interview
+
 
 - intent: provide_strategy
   examples: |
@@ -944,6 +933,9 @@ nlu:
     - crafting a multi-channel distribution strategy to increase market penetration
     - developing a robust crisis management plan to prepare for unforeseen challenges
     - focusing on employee empowerment and training to drive innovation and performance
+    - interactive meetings
+    - take into account everybody's perspective
+
 
 - intent: provide_problem_solving_approach
   examples: |
@@ -986,6 +978,7 @@ nlu:
     - applying project management methodologies to plan and execute solution implementation
     - leveraging agile principles to iteratively develop and refine solutions based on feedback
 
+
 - intent: provide_finance_work_experience
   examples: |
     - I have worked as a financial analyst, analyzing market trends and preparing reports.
@@ -1020,6 +1013,7 @@ nlu:
     - role in pension fund management, overseeing retirement fund investments and distributions
     - worked as a financial negotiator, mediating financial agreements and restructuring debts
     - experience in real estate finance, analyzing property investments and managing real estate funds
+
 
 - intent: provide_finance_qualifications_weightage
   examples: |
@@ -1056,9 +1050,11 @@ nlu:
     - my academic background includes a focus on investment strategies and portfolio management
     - hold a graduate certificate in tax law, providing a deep understanding of tax regulations and strategies
 
+
 - intent: start_healthcare_interview
   examples: |
     - I am ready to start the healthcare interview
+
 
 - intent: provide_work_life_balance_explanation
   examples: |
@@ -1110,56 +1106,7 @@ nlu:
     - I think so
     - life is not just work
     - question of organisation
-    - delve deeper into the subject
-    - expand on that point
-    - could you clarify further?
-    - add more depth to that explanation
-    - can you unpack that idea more?
-    - please provide a more detailed description
-    - enhance the current explanation with more details
-    - offer a more comprehensive overview
-    - can you shed more light on that topic?
-    - I'd appreciate more insight into that area
-    - further explanation would be helpful
-    - can you expand on how that works?
-    - please elucidate further on that matter
-    - could you give more examples?
-    - I'm looking for a bit more detail on that
-    - any additional information would be useful
-    - could you go into more detail about that?
-    - I need a bit more information to understand fully
-    - can you explain that in more detail?
-    - what does that mean in practical terms?
-    - please break that down a bit more
-    - could you dive deeper into that explanation?
-    - I'd like more information on that subject
-    - provide further clarification, please
-    - expand on the implications of that
-    - offer more specifics, if possible
-    - what led you to that conclusion?
-    - can you detail the steps involved?
-    - how does that apply in real-world scenarios?
-    - please provide further specifics
-    - could you outline that more thoroughly?
-    - I'm seeking a fuller understanding of that concept
-    - how can that be implemented effectively?
-    - can you illustrate that with an example?
-    - what are the underlying principles there?
-    - a deeper dive into that topic would be appreciated
-    - can you give a more nuanced explanation?
-    - what are the key factors to consider?
-    - could you explain the reasoning behind that?
-    - I'm curious to know more about that aspect
-    - how does that influence the overall outcome?
-    - please detail the process more clearly
-    - what are the common challenges with that?
-    - can you explain the consequences of that approach?
-    - I'd like to understand the context better
-    - what assumptions are made in that explanation?
-    - how is that typically addressed in practice?
-    - can you describe the methodology used?
-    - what are the practical considerations?
-    - I'm interested in hearing more about the background
+
 
 - intent: provide_potential_approach
   examples: |
@@ -1181,6 +1128,9 @@ nlu:
     - sympathy
     - empathy
     - through dialogue
+    - listen
+    - reassurance
+    - compassionate
     - understanding
     - nice way
     - employing a collaborative method
@@ -1192,6 +1142,7 @@ nlu:
     - applying agile methodologies for flexibility
     - focusing on sustainability as a core principle
     - prioritizing user experience in the solution
+
 
 - intent: provide_healthcare_work_experience
   examples: |
@@ -1277,6 +1228,7 @@ nlu:
     - sports medicine specialist
     - toxicologist
 
+
 - intent: provide_healthcare_qualifications_weightage
   examples: |
     - health degree
@@ -1343,3 +1295,24 @@ nlu:
     - board-certified ophthalmologist
     - clinical informatics certification
     - bachelor's degree in health information management
+
+
+- intent: farewell
+  examples: |
+    - goodbye
+    - Bye!
+    - bye-bye
+    - Goodbye!
+    - Bye for now!
+    - See you!
+    - See ya!
+    - Be seeing you!
+    - See you soon!
+    - I'm off.
+    - Cheerio!
+    - Catch you later!
+    - See you later.
+    - See you around.
+    - take care
+    - farewell
+    - so long
