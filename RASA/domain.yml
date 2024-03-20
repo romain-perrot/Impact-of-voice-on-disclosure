@@ -1,14 +1,13 @@
 version: "3.1"
 
 intents:
-#   - bot_challenge
   - greet
   - great_mood
   - bad_mood
   - nervous_mood
   - deny_nervousness
   - affirm_nervousness
-  - start
+  - start_technical_interview
   - job_discovery
   - work_preference
   - acknowledge
@@ -35,6 +34,7 @@ intents:
   - provide_potential_approach
   - provide_healthcare_work_experience
   - provide_healthcare_qualifications_weightage
+  - farewell
 
 
 entities:
@@ -42,9 +42,6 @@ entities:
 
 
 responses:
-
-#   utter_iamabot:
-#   - text: "I am a bot, powered by Rasa."
 
   utter_welcome:
     - text: "Hello, how are you doing today?"
@@ -54,18 +51,18 @@ responses:
     - text: "Glad to hear that. So, are you nervous?"
 
   utter_sad_and_nervousness:
-    - text: "Sorry to here, are you nervous about the interview?"
+    - text: "Is it because you’re nervous about the interview?"
 
   utter_nervous:
-    - text: "Don't worry, it is just a formality. Shall we begin?"
+    - text: "Don't worry, it is just a formality. Shall we begin? The first interview, for the technical position, will start when you say: I am ready to start the technical interview"
   ########################
 
   ######## choice ########
   utter_confident_start:
-    - text: "Oh that's fantastic then lets begin, shall we?"
+    - text: "Oh, that's fantastic then let's begin, shall we? The first interview, for the technical position, will start when you say: I am ready to start the technical interview"
 
   utter_nervous_start:
-    - text: "Don't be nervous, it is just a test. Shall we?" #what happen if the user say no?
+    - text: "Don't be nervous, it is just a formality. Shall we? The first interview, for the technical position, will start when you say: I am ready to start the technical interview"
   ########################
 
   utter_background_question_position:
@@ -75,43 +72,43 @@ responses:
     - text: "Do you prefer working on your own or with a team?"
 
   utter_acknowledge_and_technical_job_requirement:
-    - text: "That’s great, as you are very well aware this job is for people who have technical background."
+    - text: "That’s great, as you should be aware,  this job is for people with technical background."
 
   utter_ask_qualification_vs_experience:
-    - text: "In a work life culture, Qualification versus Experience, what do you think is more important to have?"
+    - text: "In a work life culture, what do you think is more important to have: qualification or experience?"
 
   utter_ask_suggestions_for_freshers:
-    - text: "but say about freshers who has just being graduated? What are your suggestions for them inside of a company?"
+    - text: "But what about freshers who just graduated? What are your suggestions for them?"
 
   utter_ask_easy_to_find_opportunity:
-    - text: "but do you think it's easy to find that kind of opportunity as a fresher? "  #### what if he answer no?
+    - text: "But do you think it's easy to find that kind of opportunity as a fresher? "  #### what if he answer no?
 
   utter_acknowledge_and_ask_challenging_decision_instance:
-    - text: "Explain an instance where you were forced to make a challenging decision based on scant knowledge. What was the next step you took?"
+    - text: "Explain an instance where you were forced to make a challenging decision based with limited  knowledge. What was the next step you took?"
 
   utter_acknowledge_and_ask_technical_work_experience:
-    - text: "To know more azbout your technical background, can you describe a project you have done related to IT? "
+    - text: "To know more about your technical background, can you describe a project you have done related to IT? "
 
   utter_ask_technical_qualifications_weightage:
-    - text: "what are your qualifications and how do they add weightage to your work?"
+    - text: "What are your qualifications and how do they add weightage to your work?"
 
   utter_thanks_and_start_marketing_interview:
     - text: "Thank you for your answers. The next interview, for the marketing position, will start when you say: I am ready to start the marketing interview"
 
   utter_ask_job_interest:
-    - text: "Can you tell me why do you want this job in the first place?"
+    - text: "Can you tell me why you want this job in the first place?"
 
   utter_ask_job_description_interest:
-    - text: "and what part of the job description caught your attention first?"
+    - text: "And what part of the job description caught your attention first?"
 
   utter_ask_resolve_contradicting_information:
     - text: "Let's say you are given contradicting information. In order to get reliable conclusions, how would you resolve the disparities to reach trustworthy conclusions?"
 
   utter_acknowledge_and_ask_marketing_work_experience:
-    - text: "can you describe what have you worked as earlier in marketing?"
+    - text: "Can you describe what you worked on in marketing?"
 
   utter_ask_marketing_qualifications_weightage:
-    - text: "what are your qualifications and how do they add weightage to your work?"
+    - text: "What are your qualifications and how do they add weightage to your work?"
 
   utter_thanks_and_start_finance_interview:
     - text: "Thank you for your answers. The next interview, for the finance position, will start when you say: I am ready to start the finance interview"
@@ -123,10 +120,10 @@ responses:
     - text: "When solving a problem, how do you confirm that your assumptions or hypotheses are correct?"
 
   utter_acknowledge_and_ask_finance_work_experience:
-    - text: "can you describe what have you worked as earlier in finance?"
+    - text: "Can you describe what you worked on in finance?"
 
   utter_ask_finance_qualifications_weightage:
-    - text: "what are your qualifications and how do they add weightage to your work?"
+    - text: "What are your qualifications and how do they add weightage to your work?"
 
   utter_thanks_and_start_healthcare_interview:
     - text: "Thank you for your answers. The last interview, for the healthcare position, will start when you say: I am ready to start the healthcare interview"
@@ -135,19 +132,22 @@ responses:
     - text: "What exactly does work life balance mean to you?"
 
   utter_ask_expectation_realism:
-    - text: "Aha, sounds really good but do you think it would be realistic to expect that?"
+    - text: "Sounds interesting  but do you think it would be realistic to expect that?"
 
   utter_inform_client_terrible_news:
     - text: "Have you ever found yourself in a position to inform a client of terrible news? In what manner did you approach the discussion?"
 
   utter_acknowledge_and_ask_healthcare_work_experience:
-    - text: "can you describe what have you worked as earlier in the healthcare department?"
+    - text: "Can you describe what you worked on in the healthcare department?"
 
   utter_ask_healthcare_qualifications_weightage:
-    - text: "what are your qualifications and how do they add weightage to your work?"
+    - text: "What are your qualifications and how do they add weightage to your work?"
 
   utter_final:
     - text: "This was the last interview, thank you for your cooperation!"
+
+  utter_goodbye:
+    - text: "Goodbye, take care!"
 
 # actions:
 #   - action_ask_background_question
