@@ -39,10 +39,9 @@ stories:
     - action: utter_nervous_start
 ########################
 
-
 - story: Start interview
   steps:
-    - intent: start
+    - intent: start_technical_interview
     - action: utter_background_question_position
     - intent: job_discovery
     - action: utter_acknowledge_background_question_teamwork
@@ -52,7 +51,7 @@ stories:
 
 - story: Technical interview
   steps:
-    - intent: acknowledge ### do we need to put yes/yeah and stuff like this?
+    - intent: acknowledge
     - action: utter_ask_qualification_vs_experience
     - intent: provide_qualification_vs_experience
     - action: utter_ask_suggestions_for_freshers
@@ -122,5 +121,9 @@ stories:
     - intent: provide_healthcare_work_experience
     - action: utter_ask_healthcare_qualifications_weightage
     - intent: provide_healthcare_qualifications_weightage
-
     - action: utter_final
+
+- story: Saying goodbye
+  steps:
+    - intent: farewell
+    - action: utter_goodbye
