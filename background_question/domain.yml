@@ -13,7 +13,7 @@ intents:
 responses:
 
   utter_greet:
-    - text: "Hello"
+    - text: "Hello!"
 
   utter_ask_how_doing:
     - text: "How are you doing today?"
@@ -22,7 +22,7 @@ responses:
     - text: "Glad to hear that."
 
   utter_unhappy:
-    - text: "Sorry to here that."
+    - text: "Sorry to hear that."
 
   utter_nervousness:
     - text: "Are you nervous about the interview?"
@@ -31,7 +31,7 @@ responses:
     - text: "Fantastic."
 
   utter_nervous:
-    - text: "Don't worry, it is just a formality."
+    - text: "Do not worry, it is just a formality."
   
   utter_begin:
     - text: "Shall we begin?"
@@ -43,7 +43,7 @@ responses:
     - text: "Do you prefer working on your own or with a team?"
 
   utter_inform_technical_job:
-    - text: "That’s great, as you should be aware, this job is for people with technical background."
+    - text: "That is great, as you should be aware, this job is for people with a technical background."
 
 session_config:
   session_expiration_time: 60
