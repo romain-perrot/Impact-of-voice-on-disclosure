@@ -1,0 +1,43 @@
+version: "3.1"
+
+stories:
+
+# Background question
+- story: Greeting and ask user how they're doing
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - action: utter_ask_how_doing
+
+- story: Positive mood 
+  steps:
+    - intent: positive_response
+    - action: utter_happy
+    - action: utter_nervousness
+
+- story: Negative mood 
+  steps:
+    - intent: negative_response
+    - action: utter_unhappy
+    - action: utter_nervousness
+
+- story: Ask user how confident they are
+  steps:
+    - intent: confident_response
+    - action: utter_confident
+    - action: utter_begin
+
+- story: Ask user how nervous they are
+  steps:
+    - intent: nervous_response
+    - action: utter_nervous
+    - action: utter_begin
+
+- story: Start interview
+  steps:
+    - intent: affirm
+    - action: utter_ask_offer_source
+    - intent: offer_source_response
+    - action: utter_ask_working_preference
+    - intent: work_preference
+    - action: utter_inform_technical_job

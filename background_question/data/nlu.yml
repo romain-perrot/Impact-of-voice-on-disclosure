@@ -1,0 +1,305 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hey
+    - hey there
+    - hello
+    - hello there
+    - hi
+    - hi there
+    - greetings
+    - good day
+    - good morning
+    - good afternoon
+    - good evening
+    - good to see you
+
+- intent: positive_response
+  examples: |
+    - feeling fantastic
+    - I am fine
+    - I am doing fine
+    - great
+    - great day
+    - excited
+    - happy
+    - fantastic mood
+    - superb
+    - perfect
+    - amazing
+    - feeling like a king
+    - feeling like a queen
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - thrilled
+    - on top of the world
+    - overjoyed
+    - blissful
+    - elated
+    - jubilant
+    - euphoric
+    - radiant
+    - glowing
+    - cheerful
+    - buoyant
+    - optimistic
+    - content
+    - delighted
+    - ecstatic
+    - in a joyful mood
+    - full of happiness
+
+- intent: negative_response
+  examples: |
+    - feeling down
+    - bad day
+    - terrible mood
+    - upset
+    - frustrated
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+    - feeling gloomy
+    - in a funk
+    - disheartened
+    - despondent
+    - in low spirits
+    - melancholic
+    - sorrowful
+    - dejected
+    - in a bad way
+    - down in the dumps
+    - having a rough time
+    - in a slump
+    - feeling blue
+    - heartbroken
+    - morose
+    - glum
+    - dispirited
+    - feeling miserable
+    - bummed out
+    - downhearted
+
+- intent: confident_response
+  examples: |
+    - no, not nervous
+    - i'm not anxious
+    - not feeling tense
+    - no stress
+    - i'm calm
+    - not worried at all
+    - feeling quite relaxed
+    - completely at ease
+    - not jittery
+    - actually, quite composed
+    - i'm feeling steady
+    - no, i'm quite settled
+    - i'm in my comfort zone
+    - not a nerve in sight
+    - serenity now
+    - i'm unbothered
+    - i'm as calm as I can be
+    - nothing's rattling me
+    - confidence is high
+    - i'm all good, really
+    - no fears
+    - perfectly relaxed
+    - i'm not feeling any pressure
+    - i'm in a good place
+    - not intimidated at all
+    - i'm feeling very secure
+    - ready
+
+- intent: nervous_response
+  examples: |
+    - nervous
+    - anxious
+    - worried
+    - tense
+    - stressed
+    - unsettled
+    - jittery
+    - uneasy
+    - apprehensive
+    - on edge
+    - restless
+    - fidgety
+    - agitated
+    - edgy
+    - overwrought
+    - uptight
+    - fretful
+    - disquieted
+    - perturbed
+    - overwhelmed
+    - panicky
+    - pressured
+    - daunted
+    - intimidated
+    - feeling twitchy
+    - under a lot of stress
+    - feeling the pressure
+    - alarmed
+    - in a panic
+    - angst-ridden
+    - biting nails
+    - heart racing
+    - palms sweating
+    - yes, feeling nervous
+    - i'm anxious
+    - a bit stressed
+    - feeling tense
+    - nervous right now
+    - actually, i am feeling a bit nervous
+    - indeed, i'm quite anxious
+    - it's true, feeling a bit on edge
+    - i admit, i'm a little worried
+    - feeling the jitters, honestly
+    - there's definitely some anxiety
+    - i can't deny the nervousness
+    - yeah, feeling unsettled
+    - it's a nervous feeling
+    - i've got some nerves kicking in
+    - definitely feeling the pressure
+    - somewhat stressed, to be honest
+    - yes, a tad apprehensive
+    - i'm not going to lie, feeling tense
+    - feeling a bit uneasy
+    - yeah, there's some tension
+    - i feel the stress, unfortunately
+    - nervous, that would be accurate
+    - indeed, a bit jittery
+    - can't shake this anxious feeling
+    - there's a bit of dread
+    - feeling quite anxious, yes
+    - the nervousness is noticeable
+    - a bit panicky, actually
+    - i do feel a bit scared
+    - feeling on edge, indeed
+    - i'm definitely not at ease
+
+- intent: affirm
+  examples: | 
+    - yes
+    - Yes
+    - yeah
+    - let's go
+    - of course
+    - certainly
+    - absolutely
+    - indeed
+    - clearly
+    - right
+    - sure thing
+    - definitely
+    - sure
+    - yep
+    - affirmative
+    - ok
+    - okay
+    - affirmative
+    - absolutely sure
+    - without a doubt
+
+- intent: offer_source_response
+  examples: |
+    - exploring job opportunities
+    - looking for a job
+    - job discovery
+    - considering new roles
+    - exploring career options
+    - job search
+    - Indeed
+    - LinkedIn
+    - through LinkedIn
+    - job offer
+    - company website
+    - website
+    - Internet
+    - word to mouth
+    - Friend
+    - Project
+    - Course
+    - Mail
+    - Announce
+    - career exploration
+    - seeking employment
+    - on the job hunt
+    - searching for positions
+    - browsing job listings
+    - job market research
+    - checking job boards
+    - LinkedIn search
+    - networking for opportunities
+    - seeking career advice
+    - attending job fairs
+    - exploring vacancies
+    - perusing career sites
+    - utilizing recruitment agencies
+    - exploring professional opportunities
+    - inquiring about openings
+    - scouting for roles
+    - looking into job postings
+    - consulting career counselors
+    - engaging in professional networking
+    - subscribing to job alerts
+    - participating in career workshops
+    - discussing opportunities in forums
+    - leveraging alumni networks
+    - exploring internship opportunities
+    - seeking referrals
+    - attending industry conferences
+    - exploring temporary positions
+    - considering consultancy roles
+    - researching companies of interest
+
+- intent: work_preference
+  examples: |
+    - work environment
+    - work style preference
+    - alone
+    - team
+    - equip
+    - on my own
+    - working with a team
+    - working alone
+    - remote work
+    - in-office work
+    - hybrid model
+    - project-based assignments
+    - independent tasks
+    - collaborative projects
+    - structured routine
+    - dynamic workplace
+    - leadership roles
+    - supportive team
+    - clear communication
+    - autonomy in work
+    - challenging projects
+    - opportunity for growth
+    - creativity and innovation
+    - diversity and inclusion
+    - entrepreneurial environment
+    - work independently
+    - have a team
+    - feedback from a team

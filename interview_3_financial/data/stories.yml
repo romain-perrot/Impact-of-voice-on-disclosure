@@ -1,0 +1,19 @@
+version: "3.1"
+
+stories:
+
+- story: Finance job
+  steps:
+    - intent: affirm
+    - action: utter_ask_team_report
+    - intent: provide_strategy
+    - action: utter_ask_problem_solving_approach
+    - intent: provide_problem_solving_approach
+
+    # Ask questions basis the word "finance"
+    - action: utter_acknowledge_and_ask_finance_work_experience
+    - intent: provide_finance_work_experience
+    - action: utter_ask_finance_qualifications_weightage
+    - intent: provide_finance_qualifications_weightage
+
+    - action: utter_thanks_and_start_healthcare_interview
