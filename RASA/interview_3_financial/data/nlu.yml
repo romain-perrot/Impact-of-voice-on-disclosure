@@ -1,0 +1,182 @@
+version: "3.1"
+
+nlu:
+
+- intent: affirm
+  examples: | 
+    - yes
+    - Yes
+    - yeah
+    - let's go
+    - of course
+    - certainly
+    - absolutely
+    - indeed
+    - clearly
+    - right
+    - sure thing
+    - definitely
+    - sure
+    - yep
+    - affirmative
+    - ok
+    - okay
+    - affirmative
+    - absolutely sure
+    - without a doubt
+
+- intent: provide_strategy
+  examples: |
+    - provide alternative strategy
+    - suggest a different approach
+    - propose another strategy
+    - offer an alternative plan
+    - introduce a different tactic
+    - present an alternative solution
+    - I would initiate a collaborative discussion to understand each team member's perspective and concerns.
+    - My approach would involve facilitating open communication channels to encourage sharing of ideas and viewpoints.
+    - I'd organize a brainstorming session to explore different approaches and find common ground.
+    - I'd establish clear project objectives and expectations to ensure everyone understands the end goal.
+    - My strategy would involve breaking down the project into manageable tasks and assigning roles based on each team member's strengths.
+    - I'd encourage consensus-building through compromise and negotiation to reach agreement on the project's direction.
+    - I'd leverage team-building exercises to foster trust and cohesion among team members.
+    - I'd implement a structured decision-making process to evaluate and prioritize ideas effectively.
+    - I'd seek input from subject matter experts to provide valuable insights and guidance.
+    - My strategy would include regular check-ins and progress updates to ensure everyone stays aligned throughout the project.
+    - I'd emphasize the importance of collaboration and teamwork to achieve our collective goals.
+    - considering the use of agile methodologies to enhance project flexibility
+    - integrating data analysis to inform decision-making and refine our approach
+    - proposing the adoption of lean principles to optimize efficiency and reduce waste
+    - suggesting the implementation of a feedback loop for continuous improvement
+    - offering a phased rollout to test and adjust the strategy based on real-world feedback
+    - emphasizing customer-centric design thinking to better meet user needs
+    - deploying a risk management framework to identify and mitigate potential obstacles
+    - initiating a competitive analysis to inform our strategy and leverage market gaps
+    - adopting a cross-functional team approach to leverage diverse skill sets
+    - integrating sustainability practices to align with environmental and social goals
+    - proposing a digital transformation strategy to modernize operations and enhance engagement
+    - suggesting a pilot program to validate concepts before full-scale implementation
+    - recommending strategic partnerships to expand capabilities and reach
+    - employing storytelling and content marketing to strengthen brand identity and engagement
+    - leveraging social media analytics for targeted marketing campaigns
+    - conducting user research and usability testing to guide product development
+    - applying behavioral economics principles to influence customer decisions
+    - crafting a multi-channel distribution strategy to increase market penetration
+    - developing a robust crisis management plan to prepare for unforeseen challenges
+    - focusing on employee empowerment and training to drive innovation and performance
+    - interactive meetings
+    - take into account everybody's perspective
+
+
+- intent: provide_problem_solving_approach
+  examples: |
+    - problem-solving approach
+    - approach to solving problems
+    - method for addressing issues
+    - strategy for resolving challenges
+    - problem resolution approach
+    - solving issues method
+    - I validate my assumptions through thorough financial analysis and data verification.
+    - My problem-solving approach involves stress-testing financial models to ensure robustness.
+    - I confirm hypotheses by conducting extensive market research and trend analysis.
+    - Utilizing historical financial data is a key aspect of verifying my assumptions.
+    - I rely on statistical analysis and regression models to validate financial hypotheses.
+    - My approach includes seeking input from subject matter experts to validate financial assumptions.
+    - Cross-referencing financial data from multiple sources is crucial in confirming my hypotheses.
+    - I use scenario analysis to confirm assumptions and assess potential outcomes.
+    - Regularly reviewing and updating financial models helps in validating ongoing assumptions.
+    - I conduct sensitivity analysis to gauge the impact of changes on financial assumptions.
+    - External validation through industry benchmarks is an integral part of my problem-solving process.
+    - My problem-solving approach includes collaborating with colleagues to gain diverse perspectives.
+    - employing root cause analysis to identify the underlying factors of the problem
+    - using the five whys technique to drill down into the cause of issues
+    - applying a SWOT analysis to understand strengths, weaknesses, opportunities, and threats related to the problem
+    - developing a mind map to visually organize possible solutions and approaches
+    - leveraging design thinking for creative problem-solving and innovative solutions
+    - initiating a brainstorming session with the team to generate a wide range of ideas
+    - adopting the Pareto analysis to focus on the causes that will have the greatest impact
+    - implementing the six thinking hats technique for diverse perspectives on the problem
+    - conducting a cost-benefit analysis to evaluate potential solutions
+    - utilizing decision trees to explore the outcomes of different actions
+    - applying the fishbone diagram method to systematically explore potential causes
+    - engaging in critical thinking exercises to challenge assumptions and explore alternatives
+    - organizing a focus group to gather insights and feedback from stakeholders
+    - employing a prioritization matrix to determine which problems to tackle first
+    - setting up a pilot test to evaluate the effectiveness of proposed solutions
+    - leveraging quantitative methods and tools for data-driven problem analysis
+    - facilitating a consensus-building session to agree on the best course of action
+    - conducting a gap analysis to identify the difference between the current and desired state
+    - applying project management methodologies to plan and execute solution implementation
+    - leveraging agile principles to iteratively develop and refine solutions based on feedback
+
+
+- intent: provide_finance_work_experience
+  examples: |
+    - I have worked as a financial analyst, analyzing market trends and preparing reports.
+    - My previous roles include positions as a finance manager, overseeing budgeting and financial planning.
+    - I worked as an investment banker, specializing in mergers and acquisitions.
+    - My experience includes working as a tax consultant, advising clients on tax planning strategies.
+    - I have a background in risk management, having worked as a risk analyst in the finance sector.
+    - In my previous role, I served as a financial consultant, assisting clients with investment decisions.
+    - I held a position as a corporate treasurer, managing cash flow and financial investments.
+    - My work experience encompasses roles in financial operations, ensuring efficient financial processes.
+    - I have hands-on experience in financial modeling, gained from my role as a financial consultant.
+    - I worked as an auditor, conducting financial audits and ensuring regulatory compliance.
+    - My finance career includes positions in corporate finance, focusing on capital budgeting and fundraising.
+    - I served as a financial planner, helping clients with retirement planning and wealth management.
+    - specialized in credit analysis, assessing borrower's financial stability and creditworthiness
+    - experience as a portfolio manager, managing investment portfolios to maximize returns
+    - worked in equity research, analyzing stocks and providing investment recommendations
+    - served as a compliance officer, ensuring all financial operations met legal standards
+    - role in financial strategy, developing long-term financial plans and strategies for growth
+    - worked as a financial controller, overseeing accounting operations and financial reporting
+    - involved in treasury operations, managing the organization's liquidity and financial risk
+    - experience in financial audit, evaluating financial statements and internal controls
+    - served as an accounts payable/receivable manager, managing billing processes and transactions
+    - role in payroll management, ensuring accurate and timely payment to employees
+    - specialized in financial forecasting, predicting future financial trends and performances
+    - experience in fintech startups, developing innovative financial technologies and services
+    - served as an investment advisor, providing clients with strategies for portfolio diversification
+    - worked on financial software development, creating tools for financial analysis and reporting
+    - role in venture capital, evaluating startup investments and managing venture portfolios
+    - experience as a financial educator, teaching financial principles and investment strategies
+    - served in insurance underwriting, evaluating risks and determining policy terms
+    - role in pension fund management, overseeing retirement fund investments and distributions
+    - worked as a financial negotiator, mediating financial agreements and restructuring debts
+    - experience in real estate finance, analyzing property investments and managing real estate funds
+
+
+- intent: provide_finance_qualifications_weightage
+  examples: |
+    - I have a Master's in Finance, specializing in financial analysis and risk management.
+    - My qualifications include a Bachelor's degree in Accounting and a CPA certification.
+    - With a background in investment banking, my qualifications contribute to deal analysis.
+    - I am a certified CFA charterholder, bringing advanced financial analysis skills to my work.
+    - My qualifications in financial modeling enhance my ability to make data-driven decisions.
+    - I hold an MBA with a concentration in Finance, providing a strategic perspective to my work.
+    - My experience in corporate finance, backed by qualifications, adds value to budgeting and planning.
+    - I am skilled in financial reporting and hold relevant certifications in this area.
+    - My qualifications include expertise in tax planning and compliance.
+    - I completed internships in finance, gaining practical experience in financial management.
+    - I am proficient in using financial software and analytics tools to drive insights.
+    - I have hands-on experience with risk assessment and mitigation strategies.
+    - certified in financial risk management (FRM), enhancing my risk evaluation capabilities
+    - hold a diploma in financial planning, equipping me with comprehensive wealth management skills
+    - my certification in financial analysis (CFA Level I) aids in depth financial research and analysis
+    - possess a certificate in blockchain for finance, offering insights into cutting-edge financial technologies
+    - earned a degree in economics, providing a solid foundation for financial market analysis
+    - completed a certification in quantitative finance, improving my financial modeling and quantitative analysis
+    - skilled in sustainable finance, with qualifications that help integrate ESG factors into financial decisions
+    - certified public accountant (CPA), ensuring expertise in accounting and financial reporting standards
+    - my qualifications include a specialization in mergers and acquisitions from an advanced finance course
+    - hold a certification in international finance, allowing me to manage and assess global financial transactions
+    - achieved certification in forensic accounting, enhancing my ability to investigate financial frauds and discrepancies
+    - possess a degree in finance with coursework focused on fintech innovations, preparing me for the digital finance landscape
+    - completed a series of workshops on corporate governance, underlining the importance of ethical financial management
+    - accredited in financial statement analysis, capable of dissecting financial reports to gauge organizational health
+    - my qualifications are strengthened by a certification in treasury management, focusing on cash flow and liquidity management
+    - hold a certification in credit analysis, crucial for assessing and managing credit risk
+    - experienced in financial software, certified in using SAP Finance and Oracle Financials
+    - earned a project management certification, aiding in the efficient oversight of financial projects
+    - my academic background includes a focus on investment strategies and portfolio management
+    - hold a graduate certificate in tax law, providing a deep understanding of tax regulations and strategies

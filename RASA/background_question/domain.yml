@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  - positive_response
+  - negative_response
+  - confident_response
+  - nervous_response
+  - affirm
+  - offer_source_response
+  - work_preference
+
+responses:
+
+  utter_greet:
+    - text: "Hello!"
+
+  utter_ask_how_doing:
+    - text: "How are you doing today?"
+
+  utter_happy:
+    - text: "Glad to hear that."
+
+  utter_unhappy:
+    - text: "Sorry to hear that."
+
+  utter_nervousness:
+    - text: "Are you nervous about the interview?"
+
+  utter_confident:
+    - text: "Fantastic."
+
+  utter_nervous:
+    - text: "Do not worry, it is just a formality."
+  
+  utter_begin:
+    - text: "Shall we begin?"
+  
+  utter_ask_offer_source:
+    - text: "How did you hear about this offer?"
+
+  utter_ask_working_preference:
+    - text: "Do you prefer working on your own or with a team?"
+
+  utter_inform_technical_job:
+    - text: "That is great, as you should be aware, this job is for people with a technical background."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

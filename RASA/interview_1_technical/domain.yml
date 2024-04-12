@@ -1,0 +1,40 @@
+version: "3.1"
+
+intents:
+  - affirm
+  - provide_qualification_vs_experience
+  - provide_suggestions_for_freshers
+  - provide_easy_to_find_opportunity
+  - provide_challenging_decision_instance
+  - provide_technical_work_experience
+  - provide_technical_qualifications_weightage
+
+# entities:
+#   - 
+
+responses:
+
+  utter_ask_qualification_vs_experience:
+    - text: "In a work life culture, what do you think is more important to have: qualification or experience?"
+# intent does not trigger next question
+  utter_ask_suggestions_for_freshers:
+    - text: "But what about freshers who just graduated? What are your suggestions for them?"
+# intent does not trigger next question
+  utter_ask_easy_to_find_opportunity:
+    - text: "But do you think it's easy to find that kind of opportunity as a fresher? "
+
+  utter_acknowledge_and_ask_challenging_decision_instance:
+    - text: "Explain an instance where you were forced to make a challenging decision based with limited  knowledge. What was the next step you took?"
+# intent does not trigger next question
+  utter_acknowledge_and_ask_technical_work_experience:
+    - text: "To know more about your technical background, can you describe a project you have done related to IT? "
+
+  utter_ask_technical_qualifications_weightage:
+    - text: "What are your qualifications and how do they add weightage to your work?"
+
+  utter_thanks_and_start_marketing_interview:
+    - text: "Thank you for your answers. Are you ready for the marketing interview?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

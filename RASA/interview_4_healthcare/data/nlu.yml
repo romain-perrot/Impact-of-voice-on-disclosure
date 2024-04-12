@@ -1,0 +1,283 @@
+version: "3.1"
+
+nlu:
+
+- intent: affirm
+  examples: | 
+    - yes
+    - Yes
+    - yeah
+    - let's go
+    - of course
+    - certainly
+    - absolutely
+    - indeed
+    - clearly
+    - right
+    - sure thing
+    - definitely
+    - sure
+    - yep
+    - affirmative
+    - ok
+    - okay
+    - affirmative
+    - absolutely sure
+    - without a doubt
+
+- intent: provide_work_life_balance_explanation
+  examples: |
+    - explanation of work-life balance
+    - define work-life balance
+    - understanding work-life balance
+    - work-life balance description
+    - explanation of balancing work and life
+    - work-life harmony explanation
+    - time for myself
+    - separation perso and pro
+    - line between life and work
+    - can do more close to deadline
+    - sticking to working hours
+    - overtime hours
+    - the practice of prioritizing both career and personal happiness
+    - managing professional responsibilities without compromising personal time
+    - finding equilibrium between job demands and personal interests
+    - establishing boundaries to ensure personal well-being alongside professional success
+    - allocating time effectively to fulfill both work obligations and personal needs
+    - the ability to dedicate time to family, hobbies, and relaxation while meeting work goals
+    - ensuring personal development and relaxation are not overshadowed by work commitments
+    - creating a flexible schedule that accommodates both professional tasks and personal activities
+    - emphasizing the importance of mental health and leisure in addition to work achievements
+    - adopting strategies to prevent burnout by balancing job stress with personal care
+    - maintaining a healthy division between professional duties and personal life
+    - integrating work responsibilities with personal life in a harmonious manner
+    - the pursuit of professional fulfillment without neglecting personal well-being
+    - recognizing the need for downtime and rest to enhance work performance
+    - setting clear boundaries to avoid work encroaching on personal life
+    - fostering an environment where personal time is valued as much as work productivity
+    - negotiating flexible work arrangements to support personal commitments
+    - embracing the concept of quality time off for rejuvenation and creativity
+    - achieving a state where personal satisfaction and work achievement coexist
+    - understanding the role of self-care in sustaining long-term professional performance
+
+- intent: provide_more_explanation
+  examples: |
+    - provide additional explanation
+    - explain further
+    - give more details
+    - elaborate on the explanation
+    - offer additional information
+    - provide extra context
+    - This is realistic
+    - This is how i intend to work
+    - I am productive enough to make it happen
+    - I think so
+    - life is not just work
+    - question of organisation
+
+- intent: provide_potential_approach
+  examples: |
+    - provide potential approach
+    - suggest possible approach
+    - propose a potential solution
+    - offer a potential strategy
+    - present a possible approach
+    - introduce a potential plan
+    - terrible news
+    - inform client
+    - the approach I had
+    - I informed the client
+    - diplomatic
+    - In a thoughtful way
+    - the more gentle possible
+    - kindness
+    - compassion
+    - sympathy
+    - empathy
+    - through dialogue
+    - listen
+    - reassurance
+    - compassionate
+    - understanding
+    - nice way
+    - employing a collaborative method
+    - leveraging technology for efficiency
+    - adopting a step-by-step process
+    - considering a multi-disciplinary perspective
+    - utilizing a data-driven decision-making framework
+    - integrating customer feedback into the strategy
+    - applying agile methodologies for flexibility
+    - focusing on sustainability as a core principle
+    - prioritizing user experience in the solution
+
+- intent: provide_healthcare_work_experience
+  examples: |
+    - lifeguard
+    - rescuer
+    - life saver
+    - ambulance driver
+    - paramedic
+    - pharmacist
+    - doctor
+    - surgeon
+    - nurse
+    - reanimation
+    - cardiolog
+    - chiropractor
+    - heatlh diploma
+    - dentist
+    - first aid
+    - podolog
+    - gastrolog
+    - ophtalmologist
+    - GP
+    - ENT
+    - therapist
+    - pediatrist
+    - dermatologist
+    - psychiatrist
+    - kinesitherapist
+    - physiotherapist
+    - proctologist
+    - gynaecologist
+    - anesthetist
+    - speech therapist
+    - orthoptist
+    - medical assistant
+    - clinical laboratory technician
+    - radiologic technologist
+    - occupational therapist
+    - dietitian
+    - nutritionist
+    - public health specialist
+    - health information technician
+    - medical secretary
+    - medical billing and coding specialist
+    - dental hygienist
+    - dental assistant
+    - home health aide
+    - personal care aide
+    - clinical nurse specialist
+    - nurse practitioner
+    - nursing assistant
+    - licensed practical nurse
+    - midwife
+    - nurse
+    - endocrinologist
+    - hematologist
+    - immunologist
+    - neonatologist
+    - nephrologist
+    - oncologist
+    - pulmonologist
+    - rheumatologist
+    - urologist
+    - infectious disease specialist
+    - medical researcher
+    - biomedical engineer
+    - health educator
+    - community health worker
+    - epidemiologist
+    - genetic counselor
+    - healthcare administrator
+    - hospital pharmacist
+    - medical physicist
+    - molecular biologist
+    - neurologist
+    - obstetrician
+    - occupational medicine specialist
+    - otorhinolaryngologist
+    - pathologist
+    - pediatrician
+    - plastic surgeon
+    - podiatrist
+    - radiologist
+    - sports medicine specialist
+    - toxicologist
+
+- intent: provide_healthcare_qualifications_weightage
+  examples: |
+    - health degree
+    - health diploma
+    - formation in health 
+    - training in care
+    - nurse parcours
+    - healthcare background
+    - medical training
+    - medical courses
+    - health courses
+    - health university
+    - healthcare school
+    - GP trained
+    - I used to follow class
+    - I have some training in this domain
+    - bachelor's degree in nursing
+    - master's in public health
+    - doctor of medicine degree
+    - associate degree in dental hygiene
+    - certified nursing assistant (CNA) certification
+    - emergency medical technician (EMT) certification
+    - board-certified family physician
+    - doctor of pharmacy (Pharm.D.)
+    - master of science in nursing (MSN)
+    - bachelor's in biomedical science
+    - residency in internal medicine
+    - fellowship in cardiology
+    - doctor of dental surgery (DDS)
+    - doctor of dental medicine (DMD)
+    - certified medical coder (CMC) certification
+    - registered nurse (RN) licensure
+    - licensed practical nurse (LPN) licensure
+    - physical therapy doctorate (DPT)
+    - occupational therapy master's degree
+    - speech-language pathology master's degree
+    - board-certified psychiatrist
+    - certified health education specialist (CHES)
+    - certified clinical medical assistant (CCMA)
+    - board-certified surgeon
+    - certified public health (CPH) certification
+    - radiologic technologist certification
+    - certified dietitian-nutritionist (CDN)
+    - licensed clinical social worker (LCSW)
+    - board-certified dermatologist
+    - certified orthotist (CO)
+    - prosthetist certification
+    - medical laboratory scientist (MLS) certification
+    - certified phlebotomy technician (CPT)
+    - board-certified oncologist
+    - advanced cardiac life support (ACLS) certification
+    - pediatric advanced life support (PALS) certification
+    - certified respiratory therapist (CRT)
+    - board-certified anesthesiologist
+    - certified genetic counselor (CGC)
+    - healthcare management master's degree
+    - epidemiology doctoral degree
+    - certified infection control (CIC) certification
+    - certified in healthcare compliance (CHC)
+    - board-certified neurologist
+    - clinical psychologist doctoral degree (Psy.D. or Ph.D.)
+    - certified pediatric nurse (CPN)
+    - advanced practice registered nurse (APRN) licensure
+    - board-certified ophthalmologist
+    - clinical informatics certification
+    - bachelor's degree in health information management
+
+- intent: farewell
+  examples: |
+    - goodbye
+    - Bye!
+    - bye-bye
+    - Goodbye!
+    - Bye for now!
+    - See you!
+    - See ya!
+    - Be seeing you!
+    - See you soon!
+    - I'm off.
+    - Cheerio!
+    - Catch you later!
+    - See you later.
+    - See you around.
+    - take care
+    - farewell
+    - so long
