@@ -3,7 +3,7 @@ Impact of voice on disclosure during phone interviews
 
 # Rasa Installation and Usage Guide
 
-This guide provides instructions on how to install Rasa, an open-source conversational AI framework, and how to use it to train and test conversational models.
+This guide provides instructions on how to install Rasa, an open-source conversational AI framework, and how to use it to train and test our models.
 
 ## Installation
 
@@ -37,14 +37,14 @@ After training your model, you can interact with it using the Rasa shell. To lau
 
 This will start the interactive shell where you can chat with your trained conversational model.
 
-### Other commands
-
-Rasa provides a variety of commands for different tasks such as evaluating models, running tests, and starting the Rasa server. Refer to the Rasa documentation for a comprehensive list of available commands and their usage.
-
 ## Additional Resources
 
 - [Rasa Documentation](https://rasa.com/docs/rasa/)
 - [Rasa Community Forum](https://forum.rasa.com/)
 - [Rasa GitHub Repository](https://github.com/RasaHQ/rasa)
 
-# You have to train each model beforehand to be able to launch the whole project!
+## You have to train each model beforehand to be able to launch the whole project!
+
+## Launch project
+
+To use it, start rasaInputOutput.py in Impact-of-voice-on-disclosure/code/data/
