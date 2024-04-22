@@ -3,9 +3,7 @@ import queue
 import re
 import sys
 import pyaudio
-from google.cloud import speech
-from google.protobuf import duration_pb2
-import asyncio
+from google.cloud import speech 
 import rasaInputOutput
 
 
@@ -219,32 +217,88 @@ def main() -> None:
     return rep
 
 
+def lire_fichier_texte(nom_fichier):
+    # Initialisation du dictionnaire
+    lignes = {}
+
+    try:
+        # Ouverture du fichier en mode lecture
+        with open(nom_fichier, 'r') as fichier:
+            # Lecture de chaque ligne du fichier
+            for num_ligne, ligne in enumerate(fichier, 1):
+                # Ajout de la ligne au dictionnaire avec le numéro de ligne comme clé
+                lignes[num_ligne] = ligne.strip()
+    except FileNotFoundError:
+        # Si le fichier n'est pas trouvé, afficher un message d'erreur
+        print("Le fichier spécifié n'existe pas.")
+    except Exception as e:
+        # En cas d'erreur imprévue, afficher l'erreur
+        print("Une erreur s'est produite :", e)
+
+    return lignes
+
+
 
 ####################   Script   ####################
 if __name__ == "__main__":
-    liste = rasaInputOutput.generate_voice_order()
-    answer_of_rasa = ""
+    number = 10 # number of the candidat
+    nom_fichier = "code/data/Questions.txt"
+    liste = rasaInputOutput.generate_voice_order() # retrieving the random order of voices
+    contenu_fichier = lire_fichier_texte(nom_fichier) 
+    # having the question (alternate solution to rasa)
     with open('code/data/full_script.txt', 'w') as fichier:
         for el in liste : 
             fichier.write(el)
             fichier.write(" ")
         fichier.write("\n")
-    background_model = rasaInputOutput.get_agent("model_background")
-    answer_of_rasa = rasaInputOutput.get_sentence(background_model,"code/data/testRasa")
-    rasaInputOutput.retrieve_sentence(liste[0], answer_of_rasa)
-    while answer_of_rasa != "That_is_great,_as_you_should_be_aware,_this_job_is_for_people_with_a_technical_background.":
+    input() # waiting mode : wait for an input  to start the interview
+    # loop on all questions
+    for i in range (1,33):
+        #first voice
+        if i < 14 : 
+            voice = liste[0]
+            sentence = contenu_fichier[i].replace(" ", "_")
+            rasaInputOutput.retrieve_sentence(voice, sentence)
+            print (sentence, voice, i)
+            # input()
+        # second voice
+        if i>=14 and i<20:
+            voice = liste[1]
+            sentence = contenu_fichier[i].replace(" ", "_")
+            rasaInputOutput.retrieve_sentence(voice, sentence)
+            print (sentence, voice, i)
+            # input()
+        # third voice
+        if i>=20 and i<25 : 
+            voice = liste[2]
+            sentence = contenu_fichier[i].replace(" ", "_")
+            rasaInputOutput.retrieve_sentence(voice, sentence)
+            print (sentence, voice, i)
+            # input()
+        #last voice
+        if i>=25 : 
+            voice = liste[3]
+            sentence = contenu_fichier[i].replace(" ", "_")
+            rasaInputOutput.retrieve_sentence(voice, sentence)
+            print (sentence, voice, i)
+        # speech to text
         speech_live = main()
-        print(speech_live)
-        with open("code/data/last_answer.txt", 'w') as fichier:
+        # wait for the end of the interviewee answer
+        input()
+        # save the answer in files
+        path = "code/data/interview/interview"+str(number)+"/"+str(voice)+"/"+str(sentence)+".txt"
+        # save the full interview
+        with open(path, 'w') as fichier:
             fichier.write(speech_live)
-        with open('code/data/full_script.txt', 'a') as fichier:
-            fichier.write(answer_of_rasa)
+        # save only the answer to 1 question
+        with open("code/data/interview/interview"+str(number)+"/full_script.txt", 'a') as fichier:
+            fichier.write("\n" + voice + "\n")
+            fichier.write(contenu_fichier[i])
             fichier.write("\n")
             final_sentence = speech_live + "\n\n"
             fichier.write(final_sentence)
-        answer_of_rasa = rasaInputOutput.get_sentence(background_model,"code/data/last_answer.txt")
-        print("################### answer : ", answer_of_rasa)
-        rasaInputOutput.retrieve_sentence(liste[0], answer_of_rasa)
+        
+   
 
        
 
